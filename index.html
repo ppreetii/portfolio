@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/16a0d75e96.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/logo.png" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <div class="intro-row">
+            <div class="intro-col-1">
+              <p>Software Engineer</p>
+              <h1>
+                Hi, I'm <span>Preeti Gupta</span><br />
+                from India 🇮🇳
+              </h1>
+            </div>
+            <div class="intro-col-2">
+              <img src="images/bkg_3d.png" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- About -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/user4.jpeg" alt="My Image" />
+            <div class="overlay">
+              <img src="images/user3.png" alt="my real image" />
+            </div>
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p id="description">
+              Hello, World ! I'm your go-to NodeJS Developer, turning the
+              backend world upside down for over 1.5 thrilling years! REST APIs?
+              Crafted to perfection! Test cases? Written with precision!
+              Microservices? Built like a fortress! My work isn't just about
+              coding, it's about creating magic that leaves a mark.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Languages:</span>&nbsp; JavaScript, JavaScript, Java
+                </li>
+                <li>
+                  <span>Frameworks and Development tools: </span>&nbsp; Nodejs,
+                  Expressjs, Android Studio, Strapi, Postman
+                </li>
+                <li>
+                  <span>Database and ORMs/ODMs:</span>&nbsp; Postgres, MySQL,
+                  MongoDb, Sequelize, Mongoose
+                </li>
+                <li>
+                  <span>Validation and Testing:</span>&nbsp; Joi, Jest, Postman
+                  Automation
+                </li>
+                <li>
+                  <span>Version Control and Project Management: </span>&nbsp;
+                  Github, JIRA, Confluence, Clickup
+                </li>
+                <li>
+                  <span>Containerization, Orchestration and deployment: </span
+                  >&nbsp; Docker, Kubernetes, CI/CD, Vercel, Render, Heroku
+                </li>
+                <li>
+                  <span>API Documentation and Code Quality:</span>&nbsp;
+                  Swagger, SonarQube
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>2023-Present</span><br />
+                  Freelancing and Upskilling
+                </li>
+                <li>
+                  <span>2021-2022</span><br />
+                  Software Engineer at Happiest Minds Technologies Pvt. Ltd.
+                </li>
+                <li>
+                  <span>2021-2021</span><br />
+                  Intern at ICT Health Pvt. Ltd.
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2019-2021</span><br />
+                  MCA - VSSUT,Burla, Odisha
+                </li>
+                <li>
+                  <span>2016-2019</span><br />
+                  Bsc ITM - Bhadrak Autonomous College
+                </li>
+                <li>
+                  <span>2014-2016</span><br />
+                  12th CHSE Science - Bhadrak Junior College
+                </li>
+                <li>
+                  <span>2013-2014</span><br />
+                  10th ICSE Board - Happy Home School
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- services -->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Backend Development</h2>
+            <p>
+              Design and develop high-performance, secure, and robust REST APIs,
+              adhering to industry best practices. Leverage extensive planning
+              and research to ensure scalability, reusability, and
+              maintainability.
+            </p>
+            <!-- <a href="#">Learn More</a> -->
+          </div>
+          <div>
+            <i class="fa-solid fa-crop"></i>
+            <h2>Testing</h2>
+            <p>
+              Employ a comprehensive testing strategy for all new features, that
+              prioritizes the development of robust manual and automated test
+              cases to guarantee a smooth application launch and minimize the
+              likelihood of last-minute defects.
+            </p>
+            <!-- <a href="#">Learn More</a> -->
+          </div>
+          <div>
+            <i class="fa-brands fa-app-store"></i>
+            <h2>Documentation</h2>
+            <p>
+              Maintain comprehensive documentation for all aspects of the
+              application, facilitating future reference and ensuring a smooth
+              onboarding experience for new developers.
+            </p>
+            <!-- <a href="#">Learn More</a> -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Portfolio -->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/work-1.png" alt="" />
+            <div class="layer">
+              <h3>Employee Recognition System</h3>
+              <p>
+                Based on the task and performance, employees are rewarded the
+                employee of day, week, and month awards with some bonus stars
+                and autogenerated certificate.
+              </p>
+              <div class="links">
+                <a
+                  href="https://employee-recognition-be.onrender.com/api-docs/"
+                  target="_blank"
+                  ><i class="fa-solid fa-up-right-from-square"></i
+                ></a>
+                <a
+                  href="https://github.com/ppreetii/Employee_Recognition-BE"
+                  target="_blank"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-2.png" alt="" />
+            <div class="layer">
+              <h3>Ecommerce</h3>
+              <p>
+                Simple Ecommerce Web App to buy and sell product with payment
+                system, and order pdf receipt download
+              </p>
+              <div class="links">
+                <a href="https://ecommerce-u5ea.onrender.com/" target="_blank"
+                  ><i class="fa-solid fa-up-right-from-square"></i
+                ></a>
+                <a href="https://github.com/ppreetii/Ecommerce" target="_blank"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-3.png" alt="" />
+            <div class="layer">
+              <h3>Ticketing Microservice Application</h3>
+              <p>
+                Production-ready microservice application backend code where a
+                user can sell/buy tickets of matches, concerts,shows etc, with 2
+                mins lock-in period
+              </p>
+              <div class="links">
+                <!-- <a
+                  href="https://employee-recognition-be.onrender.com/api-docs/"
+                  target="_blank"
+                  ><i class="fa-solid fa-up-right-from-square"></i
+                ></a> -->
+                <a
+                  href="https://github.com/ppreetii/ticketing_app-microservices"
+                  target="_blank"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a
+          href="https://github.com/ppreetii?tab=repositories"
+          class="btn"
+          target="_blank"
+          >See All</a
+        >
+      </div>
+    </div>
+
+    <!-- Contact -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p class="contact-desp">
+              Feel free to reach out for projects, collaborations, or just to
+              say hello! Currently seeking new opportunities.<br /><br />
+              Have a nice day ahead, dear visitor. Cheers! ☕︎
+            </p>
+            <p><i class="fa-solid fa-envelope"></i> ppreeti.guptaa@gmail.com</p>
+            <div class="social-icons">
+              <a href="https://twitter.com/ppreeti_guptaa" target="_blank"
+                ><i class="fa-brands fa-twitter-square"></i
+              ></a>
+              <a href="https://github.com/ppreetii" target="_blank"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/ppreeti-guptaa/"
+                target="_blank"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+            </div>
+
+            <a
+              href="images/Preeti_Gupta_NodeJS_Developer_Resume.pdf"
+              download
+              class="btn btn2"
+              >Resume <i class="fa-solid fa-download"></i
+            ></a>
+          </div>
+          <div class="contact-right">
+            <form id="contact-form">
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Your Name"
+                required
+              />
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                id="message"
+                name="message"
+                rows="6"
+                placeholder="Your Message"
+                required
+              ></textarea>
+              <button id="btn-submit" type="submit" class="btn btn2">
+                Submit <i class="fa-solid fa-paper-plane"></i>
+              </button>
+              <p id="contact-response"></p>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        Copyright © Preeti. Made <i class="fa-solid fa-heart"></i> with by
+        Preeti Gupta
+      </div>
+    </div>
+
+    <script>
+      const tablinks = document.getElementsByClassName("tab-links");
+      const tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        for (let link of tablinks) {
+          link.classList.remove("active-link");
+        }
+        for (let content of tabcontents) {
+          content.classList.remove("active-tab");
+        }
+
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
+    </script>
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"
+    ></script>
+
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("SgWnbCTecagOmny9b");
+      })();
+    </script>
+
+    <script>
+      document
+        .getElementById("contact-form")
+        .addEventListener("submit", async function (event) {
+          event.preventDefault();
+
+          const name = document.getElementById("name");
+          const email = document.getElementById("email");
+          const message = document.getElementById("message");
+          const btn = document.getElementById("btn-submit");
+          const btnOld = btn.innerHTML;
+          btn.disabled = true;
+          btn.style.background = "gray";
+          btn.style.cursor = "not-allowed";
+
+          const formData = new FormData(event.target);
+          const params = {
+            name: formData.get("name"),
+            email: formData.get("email"),
+            message: formData.get("message"),
+          };
+
+          const p = document.getElementById("contact-response");
+          btn.innerHTML = "Sending...";
+          try {
+            await emailjs.send("service_bsabu5g", "template_yr8p0fo", params);
+            p.innerHTML = "✅Message Sent! We will connect soon.😊";
+          } catch (error) {
+            p.innerHTML = "Failed to send message! 🫣";
+          } finally {
+            btn.innerHTML = btnOld;
+            p.style.display = "inline-block";
+            btn.style.background = "#645394";
+            btn.disabled = false;
+            btn.style.cursor = "pointer";
+
+            setTimeout(() => {
+              p.style.display = "none";
+              p.innerHTML = "";
+            }, 5000);
+          }
+        });
+    </script>
+  </body>
+</html>
